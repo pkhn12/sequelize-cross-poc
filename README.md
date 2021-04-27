@@ -1,1 +1,1 @@
-Sequelize cross database
+# Sequelize cross database host

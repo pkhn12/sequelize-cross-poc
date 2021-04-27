@@ -2,8 +2,6 @@ import Sequelize from 'sequelize'
 let sequelizeObject = new Sequelize()
 let sequelizeObject2 = new Sequelize()
 
-// import ordersModel from './resources/orders/orders.model'
-
 export async function init () {
   sequelizeObject = new Sequelize('classicmodels', 'root', '1234', {
     host: '127.0.0.1',

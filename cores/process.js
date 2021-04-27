@@ -11,7 +11,7 @@ CustomersRepository.findOne({ customerNumber: 114 }, { scope: ['customer-orders'
 })
 
 OrdersRepository.findBy({ customerNumber: 114 }, { limit: 2}).then(data => {
-  console.log('============= data order -======================')
+  console.log('---------- data order ------------------')
   console.log(data)
 })
 
@@ -21,7 +21,6 @@ customerModel.findOne({
     {
       model: orderModel,
       on: {
-        // this is where magic happens
         customerNumber: Sequelize.literal("`customer`.`customerNumber` = `classicmodels2`.`orders`.`customerNumber`") 
       }
     }

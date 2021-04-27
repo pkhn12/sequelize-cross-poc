@@ -21,15 +21,10 @@ let ordersModel = (sequelize, DataType) =>
     },
     customerNumber: {
       type: DataType.INTEGER,
-      // references: {
-      //   model: 'customers',
-      //   key: 'customerNumber'
-      // }
     }
   }, {
     tableName: 'orders',
     timestamps: false,
-    // schema: 'orders',
   })
 
 

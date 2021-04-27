@@ -44,9 +44,7 @@ let customerModel = (sequelize, DataType) =>
       type: DataType.DECIMAL,
     },
   }, {
-    // tableName: 'customers',
     timestamps: false,
-    // schema: 'customers',
   })
 
 export default customerModel
